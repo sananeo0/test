@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="top-bar-container">
+                <div class="row">
+                    <div class="col" id="col1">
+                        <ul class="first-col">
+                            <li>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="twitter-logo">
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-telephone"></i>
+                                    020-800-456-747
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p>Free in-store delivery</p>
+                    </div>
+                    <div class="col" id="col3">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary main-button"
+                               href="#"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false"
+                               aria-haspopup="true">
+                                English
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">German</a></li>
+                                <li><a class="dropdown-item" href="#">French</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary main-button"
+                               href="#"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                USD
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">GBP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <a href="#" id="logo">Varkala</a>
+            <div class="navbar-content">
+                <ul>
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">Home</a>
+                        <div class="dropdown-menu" id="home">
+                            <a href="#" class="dropdown-item">Home 1 -Fashion</a>
+                            <a href="#" class="dropdown-item">Home 2 -Fashion</a>
+                            <a href="#" class="dropdown-item">
+                                Home 3 -Design
+                                <span class="badge badge-primary-light">New</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                Home 4 -Design
+                                <span class="badge badge-primary-light">New</span>
+                            </a>
+                        </div>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Shop</a>
+                        <div class="dropdown-menu" id="shop">
+                            <div class="row">
+                                <div class="col col-lg-4 col-sm-6 p-lg-5">
+                                    <h6 class="dropdown-header h6 pl-lg-0">Shop pages</h6>
+                                    <a href="#" class="dropdown-item pl-lg-0">Full width</a>
+                                    <a href="#" class="dropdown-item pl-lg-0">
+                                        Full width with category menu
+                                    </a>
+                                    <a href="#" class="dropdown-item pl-lg-0">
+                                        Full width with big products
+                                    </a>
+                                    <a href="#" class="dropdown-item pl-lg-0">Fixed width </a>
+                                    <a href="#" class="dropdown-item pl-lg-0">
+                                        Fixed width & sidebar
+                                    </a>
+                                    <a href="#" class="dropdown-item pl-lg-0">
+                                        Fixed width & masonry layout
+                                        <span class="badge badge-primary-light">New</span>
+                                    </a>
+                                    <a href="#" class="dropdown-item">Subcategories</a>
+                                </div>
+                                <div class="col col-lg-4 col-sm-6 p-lg-5">
+                                    <h6 class="dropdown-header h6 pl-lg-0">Product pages</h6>
+                                    <a class="dropdown-item pl-lg-0">
+                                        Product with sticky info
+                                    </a>
+                                    <a class="dropdown-item pl-lg-0">
+                                        Product with background
+                                    </a>
+                                    <a class="dropdown-item pl-lg-0"> Product standard </a>
+                                </div>
+                                <div class="col col-lg-4 d-none d-lg-block">
+                                    <img class="bg-img"
+                                         src="/src/assets/kyle-loftus-596319-unsplash-cropped.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Icons</a>
+                        <div class="dropdown-menu py-lg-0" id="icons">
+                            <div class="row py-lg-3 px-4">
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a href="#" class="text-reset">
+                                        <img src="/src/assets/icons/pants.png" class="icon" />
+                                        <h6>Trousers</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/jacket.png" class="icon" />
+                                        <h6>Jacket</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/tshirt.png" class="icon" />
+                                        <h6>T-Shirt</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/shirt.png" class="icon" />
+                                        <h6>Shirts</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/pullover.png" class="icon" />
+                                        <h6>Pullover</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/scarf.png" class="icon" />
+                                        <h6>Scarfs</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/shorts.png" class="icon" />
+                                        <h6>Shorts</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/boxers.png" class="icon" />
+                                        <h6>Underwear</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/watch.png" class="icon" />
+                                        <h6>Watches</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/briefcase.png" class="icon" />
+                                        <h6>Bags</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/cap.png" class="icon" />
+                                        <h6>Caps</h6>
+                                    </a>
+                                </div>
+                                <div class="icons-col col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                                    <a class="text-reset">
+                                        <img src="/src/assets/icons/accessory.png" class="icon" />
+                                        <h6>Accessories</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-primary text-center text-sm d-none d-lg-block">
+                                <p class="mb-0">
+                                    Don't miss our biggest sales this year. Use the code
+                                    "SUMMER35" at checkout until Jun. 15!
+                                </p>
+                            </div>
+                        </div>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a href="#" class="nav-link">Pages</a>
+                        <div class="dropdown-menu megamenu px-4 px-lg-5 py-lg-5"
+                             id="pages">
+                            <div class="row navbar-row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <img class="img-fluid mb-3 d-none d-lg-block"
+                                         src="/src/assets/christopher-campbell-28571-unsplash.jpg" />
+                                    <h6>Homepage</h6>
+                                    <ul class="megamenu-list">
+                                        <li class="megamenu-list-item">
+                                            <a class="megamenu-list-link" href="#">Home 1 -Fashion</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a class="megamenu-list-link" href="#">Home 2 -Fashion</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a class="megamenu-list-link" href="#">
+                                                Home 3 -Design
+                                                <span class="badge badge-primary-light ml-1">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Home 4 -Design
+                                                <span class="badge badge-primary-light ml-1">New</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <h6>Category</h6>
+                                    <ul class="megamenu-list list-unstyled mb-lg-0">
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Full width</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Full width with category menu</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Full width with big products
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Fixed width </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Fixed width & sidebar
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Fixed width & masonry layout
+                                                <span class="badge badge-primary-light ml-1">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Subcategories
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <img src="/src/assets/ian-dooley-347962-unsplash.jpg"
+                                         class="img-fluid mb-3 d-none d-lg-block" />
+                                    <h6>Order process</h6>
+                                    <ul class="megamenu-list">
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Shopping cart
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Checkout - Five steps<span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Checkout - Single-page
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Checkout - confirmed
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Wishlist</a>
+                                        </li>
+                                    </ul>
+                                    <h6>Product</h6>
+                                    <ul class="megamenu-list">
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Product with sticky info</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Product with background</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Product standard
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <img src="/src/assets/ian-dooley-347942-unsplash.jpg"
+                                         class="img-fluid mb-3 d-none d-lg-block" />
+                                    <h6>Blog</h6>
+                                    <ul class="megamenu-list">
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Blog</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Blog - Masonry</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Post</a>
+                                        </li>
+                                    </ul>
+                                    <h6>Pages</h6>
+                                    <ul class="megamenu-list">
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                About - Company
+                                                <span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                About v.2 - Person<span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                F.A.Q.
+                                                <span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">Contact</a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Privacy policy
+                                                <span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <img src="/src/assets/photo-1534126511673-b6899657816a.jpg"
+                                         class="img-fluid mb-3 d-none d-lg-block" />
+                                    <h6>Customer</h6>
+                                    <ul class="megamenu-list">
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Login/sign up<span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Orders<span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Order detail
+                                                <span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Order tracking<span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Addresses
+                                                <span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Profile<span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="megamenu-list-item">
+                                            <a href="#" class="megamenu-list-link">
+                                                Wishlist
+                                                <span class="badge badge-primary-light">New</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Docs</a>
+                        <div class="dropdown-menu" id="docs">
+                            <a href="#" class="dropdown-item">Introduction </a>
+                            <a href="#" class="dropdown-item">Directory structure </a>
+                            <a href="#" class="dropdown-item">Gulp</a>
+                            <a href="#" class="dropdown-item">Customizing CSS </a>
+                            <a href="#" class="dropdown-item">Credits </a>
+                            <a href="#" class="dropdown-item">Changelog </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Bootstrap</a>
+                            <a href="#" class="dropdown-item">Theme</a>
+                        </div>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+                </ul>
+                <form action="#"
+                      class="d-lg-flex ml-auto mr-lg-5 mr-xl-6 my-4 my-lg-0">
+                    <div class="input-group input-group-underlined">
+                        <input type="text"
+                               placeholder="Search"
+                               class="form-control form-control-underlined pl-3" />
+                        <div class="input-group-append ml-0">
+                            <button class="btn btn-underlined py-0">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="24"
+                                     height="24"
+                                     fill="currentColor"
+                                     class="bi bi-search svg-icon navbar-icon"
+                                     viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="list-inline mb-0 d-none d-lg-block">
+                    <li class="list-inline-item mr-3">
+                        <a href="#"
+                           class="text-dark text-hover-primary"
+                           data-toggle="modal">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                        <a href="#"
+                           class="text-dark text-hover-primary position-relative">
+                            <i class="bi bi-heart"></i>
+                            <div class="navbar-icon-badge">3</div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item position-relative mr-3">
+                        <a href="#"
+                           class="text-dark text-hover-primary"
+                           data-toggle="modal">
+                            <i class="bi bi-bag-dash"></i>
+                            <div class="navbar-icon-badge basket-bandage">5</div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"
+                           class="text-dark text-hover-primary"
+                           data-toggle="modal">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <svg class="svg-blob"
+         id="10015.io"
+         viewBox="0 0 480 480"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path fill="#e0d4ab"
+              d="M294.5,338.5Q126,437,127.5,242.5Q129,48,296,144Q463,240,294.5,338.5Z" />
+    </svg>
+    <div class="swiper-container home-slider-design swiper-container-initialized swiper-container-horizontal">
+        <div class="swiper-wrapper"></div>
+    </div>
+    <div class="position-relative py-6">
+        <div class="container">
+            <h2>New Arrivals</h2>
+            <p class="lead text-muted mb-5">
+                One morning, when Gregor Samsa woke from troubled dreams, he found
+                himself transformed in his bed into a horrible vermin. He lay on his
+                armour-like back, and if he lifted his head a little he could see his
+                brown belly, slightly domed and divided by arches into stiff sections
+            </p>
+            <div class="row justify-content-between align-items-center mb-4">
+                <div class="col-12 col-md">
+                    <ul class="list-inline mb-3 mb-md-0">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-dark">All Product</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-muted text-hover-dark">Chairs</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-muted text-hover-dark">Books</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-muted text-hover-dark">Clothes</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-muted text-hover-dark">Accessories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <a href="#" class="btn btn-link px-0">All products</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-4 col-6">
+                    <div class="product aos-init aos-animate"
+                         data-aos="zoom-in"
+                         data-aos-delay="0">
+                        <div class="product-image mb-md-3">
+                            <div class="product-badge badge badge-secondary">Fresh</div>
+                            <a href="#">
+                                <div class="product-swap-image">
+                                    <img class="img-fluid product-swap-image-front" src="" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="position-relative text-center" style="background: #eae0bd">
+            <div class="position-absolute w-100 h-100 overflow-hidden">
+                <svg class="cover-blob"
+                     id="10015.io"
+                     viewBox="0 0 480 480"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path fill="#bcac76"
+                          d="M294.5,343.5Q120,447,124.5,247.5Q129,48,299,144Q469,240,294.5,343.5Z" />
+                </svg>
+            </div>
+            <div class="py-6 px-4">
+                <img src="/src/assets/chair-transparent.png"
+                     class="position-absolute d-none d-md-block cover-picture" />
+                <div class="position-relative z-index">
+                    <h4 class="display-3 font-weight-bold mb-3">Summer Sales</h4>
+                    <h5 class="h2 font-weight-light mb-5">
+                        Our biggest sales this year — up to 60% off!
+                    </h5>
+                    <a href="#" class="btn btn-outline-dark cover-btn">Start shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="py-5 py-lg-6 bg-gray-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 py-4 service-column">
+                        <img src="/src/assets/icons/fast-delivery.png" />
+                        <div class="service-text">
+                            <h6 class="text-sm mb-1">Free shipping & return</h6>
+                            <p class="text-muted font-weight-light text-sm mb-0">
+                                Free Shipping over $300
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 py-4 service-column">
+                        <img src="/src/assets/icons/dollar.png" />
+                        <div class="service-text">
+                            <h6 class="text-sm mb-1">Money back guarantee</h6>
+                            <p class="text-muted font-weight-light text-sm mb-0">
+                                30 Days Money Back Guarantee
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 py-4 service-column">
+                        <img src="/src/assets/icons/discount.png" />
+                        <div class="service-text">
+                            <h6 class="text-sm mb-1">Best prices</h6>
+                            <p class="text-muted font-weight-light text-sm mb-0">
+                                Always the best prices
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 py-4 service-column">
+                        <img src="/src/assets/icons/support.png" />
+                        <div class="service-text">
+                            <h6 class="text-sm mb-1">020-800-456-747</h6>
+                            <p class="text-muted font-weight-light text-sm mb-0">
+                                24/7 Available Support
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-6 text-muted">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 pr-lg-5 pr-xl-6 mb-5 mb-lg-0">
+                        <h6 class="text-dark letter-spacing-1 mb-4">Be in touch</h6>
+                        <p class="text-sm mb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                            itaque temporibus.
+                        </p>
+                        <form action="#" id="newsletter-form">
+                            <div class="input-group input-group-underlined mb-3">
+                                <input class="form-control form-control-underlined"
+                                       type="email"
+                                       placeholder="Your Email Address" />
+                                <div class="input-group-append ml-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="32"
+                                         height="32"
+                                         fill="currentColor"
+                                         class="bi bi-envelope"
+                                         viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="expand-lg">
+                                    <h6 class="text-dark letter-spacing-1 mb-4 d-none d-lg-block">
+                                        Shop
+                                    </h6>
+                                    <ul class="list-unstyled text-sm pt-2 pt-lg-0">
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">For Women</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">For Men</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Stores</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Our Blog</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Shop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="expand-lg">
+                                    <h6 class="text-dark letter-spacing-1 mb-4 d-none d-lg-block">
+                                        Company
+                                    </h6>
+                                    <ul class="list-unstyled text-sm pt-2 pt-lg-0">
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Login</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Register</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Wishlist</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Our Products</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Checkouts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="expand-lg">
+                                    <h6 class="text-dark letter-spacing-1 mb-4 d-none d-lg-block">
+                                        Your account
+                                    </h6>
+                                    <ul class="list-unstyled text-sm pt-2 pt-lg-0">
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Login</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Register</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Wishlist</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Our Products</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#"
+                                               class="text-muted text-hover-dark link-animated">Checkouts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 font-weight-light text-muted">
+            <div class="container">
+                <div class="row align-items-center text-sm text-gray-500">
+                    <div class="col-lg-4 text-center text-lg-left">
+                        <p class="mb-lg-0">© 2020 Your company. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-lg-right">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-reset">Terms & Conditions</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-reset"> Privacy & cookies</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-reset"> Accessibility</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-reset"> Customer Data Promise</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="/src/index.js"></script>
+</html>
